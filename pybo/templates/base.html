@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link rel="stylesheet" href="{{url_for('static', filename='bootstrap.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<title>Hello, pybo!</title>
+</head>
+<body>
+	{% include "navbar.html" %}
+	
+	{% block content %}
+	{% endblock %}
+</body>
+<script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='jquery-3.4.1.min.js')}}"></script>
+{% block script %}
+{% endblock %}
+</html>
